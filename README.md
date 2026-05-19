@@ -2,7 +2,7 @@
 
 Lê dados de uma planilha (xlsx local ou Google Sheets) e cria rotas otimizadas na Cobli via API GraphQL (a mesma API usada pelo painel web).
 
-## ⚠️ Decisões importantes
+## Decisões importantes
 
 A automação usa a **API GraphQL interna** (`api.cobli.co/graphql`) e não a REST pública (`/public/v1/routes`). A REST está retornando 400 com corpo vazio (bug da Cobli, sem mensagem de erro) e foi descartada após análise de tráfego do painel.
 
@@ -41,7 +41,7 @@ roteirizacao_cobli/
 
 4. (Opcional, só se for usar Google Sheets) Criar um Service Account no Google Cloud, gerar uma chave JSON e salvar como `credentials.json` na raiz do projeto. Depois compartilhe a planilha com o `client_email` do service account (permissão de leitor).
 
-> ⚠️ **Atenção segurança:** `credentials.json` e `.env` contêm segredos e estão no `.gitignore`. **Nunca** faça commit desses arquivos.
+>  **Atenção segurança:** `credentials.json` e `.env` contêm segredos e estão no `.gitignore`. **Nunca** faça commit desses arquivos.
 
 ### Como pegar o `COBLI_API_SID`
 
