@@ -4,7 +4,7 @@ Cadastro das lojas Pophouse — pontos de partida/retorno da rota.
 Cada loja tem endereço completo (string) + latitude e longitude.
 Pra adicionar nova loja, basta acrescentar uma entrada nesse dicionário.
 
-⚠️ As coordenadas devem ser PRECISAS (pega no Google Maps com botão direito).
+As coordenadas devem ser PRECISAS (pega no Google Maps com botão direito).
 Imprecisão aqui impacta a otimização da rota inteira pela Cobli.
 """
 
@@ -20,7 +20,7 @@ LOJAS = {
         "codigo": "juveve",
         "nome": "Loja Juvevê",
         "endereco": "Rua Padre Germano Mayer, 2070, Juvevê, Curitiba - PR, Brasil",
-        # ⚠️ ESTIMATIVA — abre o Google Maps, busca "R. Padre Germano Mayer, 2070,
+        # ESTIMATIVA — abre o Google Maps, busca "R. Padre Germano Mayer, 2070,
         # Curitiba", clica direito no pin e cola as coords exatas aqui.
         "latitude": -25.4220000,
         "longitude": -49.2480000,
